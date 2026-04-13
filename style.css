@@ -1,0 +1,242 @@
+:root {
+    --bg-base: #f4ddd2;
+    --blob-1: rgba(222, 150, 126, 0.46);
+    --blob-2: rgba(239, 191, 171, 0.42);
+    --blob-3: rgba(210, 130, 116, 0.30);
+    --blob-4: rgba(247, 217, 196, 0.52);
+    --blob-5: rgba(201, 113, 108, 0.18);
+
+    --text: #171412;
+    --muted: rgba(23, 20, 18, 0.72);
+    --speaker: rgba(23, 20, 18, 0.78);
+    --rule: rgba(23, 20, 18, 0.15);
+
+    --paper: rgba(255, 248, 243, 0.38);
+    --max-width: 760px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background:
+        radial-gradient(58rem 36rem at 8% 12%, var(--blob-1) 0%, transparent 60%),
+        radial-gradient(42rem 28rem at 88% 16%, var(--blob-2) 0%, transparent 64%),
+        radial-gradient(34rem 26rem at 18% 64%, var(--blob-3) 0%, transparent 66%),
+        radial-gradient(48rem 32rem at 78% 76%, var(--blob-4) 0%, transparent 62%),
+        radial-gradient(30rem 20rem at 54% 48%, var(--blob-5) 0%, transparent 72%),
+        linear-gradient(180deg, #f2d8cd 0%, #f6e6dc 38%, #f1d8cb 100%);
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 24px;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 56px 28px 72px;
+}
+
+.masthead,
+.dialogue,
+.signature {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.masthead {
+    margin-top: 8px;
+    margin-bottom: 62px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.kicker {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 0.95;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.subtitle {
+    margin-top: 16px;
+    max-width: 34em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--muted);
+}
+
+.dialogue {
+    position: relative;
+}
+
+.exchange {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    column-gap: 12px;
+    align-items: start;
+    margin: 0 0 18px 0;
+}
+
+.speaker {
+    padding-top: 0.2em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.78rem;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--speaker);
+}
+
+.line {
+    min-width: 0;
+}
+
+.line em {
+    font-style: italic;
+}
+
+.section-gap {
+    height: 46px;
+}
+
+.signature {
+    margin-top: 84px;
+    text-align: center;
+}
+
+.signature a {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: lowercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.18s ease;
+}
+
+.signature a:hover {
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 22px;
+    }
+
+    .page {
+        padding: 44px 22px 60px;
+    }
+
+    .masthead {
+        margin-bottom: 54px;
+    }
+
+    .exchange {
+        grid-template-columns: 64px 1fr;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 20px;
+        line-height: 1.64;
+    }
+
+    .page {
+        padding: 32px 18px 48px;
+    }
+
+    .masthead {
+        margin-bottom: 42px;
+        padding-bottom: 18px;
+    }
+
+    .kicker {
+        margin-bottom: 16px;
+        font-size: 0.72rem;
+    }
+
+    h1 {
+        font-size: 2.45rem;
+        line-height: 0.98;
+        letter-spacing: -0.025em;
+    }
+
+    .subtitle {
+        margin-top: 12px;
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    .exchange {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 3px;
+        margin-bottom: 20px;
+    }
+
+    .speaker {
+        padding-top: 0;
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+    }
+
+    .section-gap {
+        height: 34px;
+    }
+
+    .signature {
+        margin-top: 62px;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        font-size: 19px;
+    }
+
+    .page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 0.92rem;
+    }
+}
