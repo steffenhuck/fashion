@@ -204,6 +204,22 @@ h1 {
 
 @media (max-width: 700px) {
     html {
+        background-color: #f0cbb8;
+        background-image:
+            radial-gradient(28rem 20rem at 10% 12%, rgba(226, 132, 102, 0.55) 0%, transparent 60%),
+            radial-gradient(26rem 18rem at 40% 18%, rgba(246, 172, 140, 0.55) 0%, transparent 60%),
+            radial-gradient(24rem 18rem at 70% 14%, rgba(170, 165, 90, 0.50) 0%, transparent 60%),
+            radial-gradient(30rem 22rem at 88% 26%, rgba(224, 150, 112, 0.55) 0%, transparent 60%),
+
+            radial-gradient(28rem 20rem at 18% 55%, rgba(252, 200, 172, 0.55) 0%, transparent 60%),
+            radial-gradient(26rem 18rem at 50% 50%, rgba(150, 146, 84, 0.50) 0%, transparent 60%),
+            radial-gradient(28rem 20rem at 82% 58%, rgba(232, 160, 120, 0.55) 0%, transparent 60%),
+
+            radial-gradient(28rem 20rem at 20% 85%, rgba(210, 120, 90, 0.55) 0%, transparent 60%),
+            radial-gradient(26rem 18rem at 60% 82%, rgba(168, 164, 90, 0.50) 0%, transparent 60%),
+            radial-gradient(28rem 20rem at 90% 88%, rgba(240, 170, 130, 0.55) 0%, transparent 60%),
+
+            linear-gradient(180deg, #efc6b2 0%, #f3d6c6 100%);
         background-attachment: scroll;
     }
 
