@@ -1,10 +1,7 @@
 :root {
-    --text: #171310;
-    --muted: rgba(23, 19, 16, 0.72);
-    --speaker: rgba(23, 19, 16, 0.82);
-
-    --paper: rgba(255, 248, 243, 0.42);
-    --paper-mobile: rgba(255, 248, 243, 0.56);
+    --text: #17120f;
+    --muted: rgba(23, 18, 15, 0.72);
+    --speaker: rgba(23, 18, 15, 0.82);
 
     --max-width: 780px;
 }
@@ -18,18 +15,18 @@ html {
     padding: 0;
     min-height: 100%;
 
-    background-color: #efd7cc;
+    background-color: #5a493f;
     background-image:
-        radial-gradient(90rem 54rem at 6% 8%, rgba(228, 150, 128, 0.30) 0%, rgba(228, 150, 128, 0.30) 18%, transparent 52%),
-        radial-gradient(84rem 50rem at 28% 14%, rgba(242, 187, 160, 0.26) 0%, rgba(242, 187, 160, 0.26) 17%, transparent 54%),
-        radial-gradient(88rem 52rem at 56% 10%, rgba(163, 153, 108, 0.18) 0%, rgba(163, 153, 108, 0.18) 14%, transparent 56%),
-        radial-gradient(92rem 56rem at 88% 18%, rgba(232, 164, 120, 0.24) 0%, rgba(232, 164, 120, 0.24) 16%, transparent 56%),
-        radial-gradient(86rem 52rem at 14% 46%, rgba(246, 206, 180, 0.20) 0%, rgba(246, 206, 180, 0.20) 16%, transparent 58%),
-        radial-gradient(84rem 50rem at 42% 44%, rgba(147, 141, 100, 0.15) 0%, rgba(147, 141, 100, 0.15) 12%, transparent 58%),
-        radial-gradient(90rem 54rem at 76% 52%, rgba(214, 136, 120, 0.22) 0%, rgba(214, 136, 120, 0.22) 15%, transparent 56%),
-        radial-gradient(88rem 52rem at 26% 82%, rgba(242, 174, 142, 0.20) 0%, rgba(242, 174, 142, 0.20) 16%, transparent 58%),
-        radial-gradient(82rem 48rem at 72% 84%, rgba(172, 161, 114, 0.14) 0%, rgba(172, 161, 114, 0.14) 12%, transparent 60%),
-        linear-gradient(180deg, #efd0c3 0%, #f4dfd5 46%, #eed5c8 100%);
+        radial-gradient(95rem 58rem at 8% 10%, rgba(88, 62, 47, 0.92) 0%, rgba(88, 62, 47, 0.92) 18%, transparent 52%),
+        radial-gradient(88rem 54rem at 28% 14%, rgba(192, 133, 103, 0.42) 0%, rgba(192, 133, 103, 0.42) 15%, transparent 54%),
+        radial-gradient(92rem 56rem at 56% 11%, rgba(118, 114, 75, 0.48) 0%, rgba(118, 114, 75, 0.48) 13%, transparent 56%),
+        radial-gradient(96rem 60rem at 86% 18%, rgba(150, 100, 75, 0.48) 0%, rgba(150, 100, 75, 0.48) 14%, transparent 56%),
+        radial-gradient(90rem 56rem at 14% 44%, rgba(214, 164, 137, 0.22) 0%, rgba(214, 164, 137, 0.22) 14%, transparent 58%),
+        radial-gradient(88rem 54rem at 42% 42%, rgba(92, 90, 58, 0.34) 0%, rgba(92, 90, 58, 0.34) 11%, transparent 58%),
+        radial-gradient(94rem 58rem at 76% 50%, rgba(124, 82, 65, 0.42) 0%, rgba(124, 82, 65, 0.42) 13%, transparent 56%),
+        radial-gradient(92rem 56rem at 24% 80%, rgba(180, 126, 98, 0.32) 0%, rgba(180, 126, 98, 0.32) 14%, transparent 58%),
+        radial-gradient(86rem 52rem at 72% 84%, rgba(109, 106, 70, 0.30) 0%, rgba(109, 106, 70, 0.30) 11%, transparent 60%),
+        linear-gradient(180deg, #6a574b 0%, #7b6658 42%, #665346 100%);
     background-attachment: fixed;
 }
 
@@ -39,7 +36,7 @@ body {
     min-height: 100%;
     color: var(--text);
     font-family: "Source Serif 4", Georgia, serif;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.68;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -61,21 +58,16 @@ body {
 
 .masthead {
     margin-top: 6px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .byline {
     font-family: "Inter", Arial, sans-serif;
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     line-height: 1.45;
     letter-spacing: 0.02em;
-    color: var(--muted);
-    margin-bottom: 18px;
-}
-
-.byline-separator {
-    opacity: 0.65;
-    padding: 0 0.35em;
+    color: rgba(255, 242, 234, 0.78);
+    margin-bottom: 14px;
 }
 
 .invisible-link {
@@ -90,26 +82,41 @@ body {
 
 h1 {
     margin: 0;
-    font-size: clamp(3.2rem, 6.8vw, 5.8rem);
-    line-height: 0.94;
+    font-size: clamp(4.2rem, 8.5vw, 7.2rem);
+    line-height: 0.88;
     font-weight: 500;
-    letter-spacing: -0.045em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 244, 236, 0.92);
 }
 
 .subtitle {
-    margin-top: 14px;
+    margin-top: 12px;
     font-family: "Inter", Arial, sans-serif;
-    font-size: 0.98rem;
+    font-size: 0.94rem;
     line-height: 1.45;
-    color: var(--muted);
+    color: rgba(255, 242, 234, 0.66);
 }
 
 .dialogue {
     padding: 30px 34px 24px;
-    background: var(--paper);
-    border: 1px solid rgba(23, 19, 16, 0.05);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+
+    background:
+        radial-gradient(120% 140% at 10% 12%, rgba(184, 126, 97, 0.18) 0%, transparent 55%),
+        radial-gradient(120% 140% at 82% 18%, rgba(116, 113, 74, 0.16) 0%, transparent 54%),
+        radial-gradient(140% 160% at 62% 82%, rgba(204, 150, 123, 0.14) 0%, transparent 58%),
+        radial-gradient(130% 150% at 36% 44%, rgba(95, 92, 60, 0.10) 0%, transparent 56%),
+        rgba(248, 236, 227, 0.64);
+
+    border-radius: 30px;
+    border: 1px solid rgba(255, 248, 242, 0.08);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    box-shadow:
+        0 18px 44px rgba(20, 12, 8, 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.16);
 }
 
 .exchange {
@@ -123,16 +130,17 @@ h1 {
 .speaker {
     padding-top: 0.18em;
     font-family: "Inter", Arial, sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.74rem;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--speaker);
+    color: rgba(54, 42, 35, 0.72);
 }
 
 .line {
     min-width: 0;
+    color: rgba(41, 31, 26, 0.92);
 }
 
 .line em {
@@ -145,7 +153,7 @@ h1 {
 
 @media (max-width: 900px) {
     body {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .page {
@@ -153,11 +161,16 @@ h1 {
     }
 
     .masthead {
-        margin-bottom: 34px;
+        margin-bottom: 32px;
+    }
+
+    h1 {
+        font-size: clamp(3.6rem, 9vw, 5.8rem);
     }
 
     .dialogue {
         padding: 26px 26px 20px;
+        border-radius: 26px;
     }
 
     .exchange {
@@ -172,7 +185,7 @@ h1 {
     }
 
     body {
-        font-size: 20px;
+        font-size: 18.5px;
         line-height: 1.64;
     }
 
@@ -181,24 +194,31 @@ h1 {
     }
 
     .byline {
-        font-size: 0.8rem;
-        margin-bottom: 14px;
+        font-size: 0.78rem;
+        margin-bottom: 12px;
     }
 
     h1 {
-        font-size: 2.55rem;
-        line-height: 0.98;
-        letter-spacing: -0.03em;
+        font-size: 2.95rem;
+        line-height: 0.94;
+        letter-spacing: 0.06em;
     }
 
     .subtitle {
         margin-top: 10px;
-        font-size: 0.9rem;
+        font-size: 0.88rem;
     }
 
     .dialogue {
         padding: 22px 18px 16px;
-        background: var(--paper-mobile);
+        border-radius: 22px;
+
+        background:
+            radial-gradient(120% 140% at 10% 12%, rgba(184, 126, 97, 0.14) 0%, transparent 55%),
+            radial-gradient(120% 140% at 82% 18%, rgba(116, 113, 74, 0.13) 0%, transparent 54%),
+            radial-gradient(140% 160% at 62% 82%, rgba(204, 150, 123, 0.12) 0%, transparent 58%),
+            radial-gradient(130% 150% at 36% 44%, rgba(95, 92, 60, 0.08) 0%, transparent 56%),
+            rgba(248, 236, 227, 0.72);
     }
 
     .exchange {
@@ -220,14 +240,14 @@ h1 {
 
 @media (max-width: 430px) {
     body {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     h1 {
-        font-size: 2.28rem;
+        font-size: 2.6rem;
     }
 
     .subtitle {
-        font-size: 0.88rem;
+        font-size: 0.84rem;
     }
 }
