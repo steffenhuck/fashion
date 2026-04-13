@@ -18,18 +18,18 @@ html {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    background-color: #f1d7ca;
+    background-color: #efd7cc;
     background-image:
-        radial-gradient(48rem 30rem at 8% 10%, rgba(214, 148, 131, 0.92) 0%, rgba(214, 148, 131, 0.92) 24%, transparent 25%),
-        radial-gradient(42rem 26rem at 34% 22%, rgba(237, 184, 152, 0.90) 0%, rgba(237, 184, 152, 0.90) 22%, transparent 23%),
-        radial-gradient(44rem 28rem at 66% 12%, rgba(191, 170, 132, 0.74) 0%, rgba(191, 170, 132, 0.74) 21%, transparent 22%),
-        radial-gradient(54rem 34rem at 88% 28%, rgba(222, 153, 120, 0.88) 0%, rgba(222, 153, 120, 0.88) 23%, transparent 24%),
-        radial-gradient(46rem 30rem at 16% 48%, rgba(244, 197, 170, 0.86) 0%, rgba(244, 197, 170, 0.86) 20%, transparent 21%),
-        radial-gradient(44rem 30rem at 52% 50%, rgba(177, 159, 120, 0.66) 0%, rgba(177, 159, 120, 0.66) 20%, transparent 21%),
-        radial-gradient(42rem 28rem at 82% 58%, rgba(210, 133, 116, 0.88) 0%, rgba(210, 133, 116, 0.88) 21%, transparent 22%),
-        radial-gradient(48rem 30rem at 28% 78%, rgba(239, 174, 146, 0.88) 0%, rgba(239, 174, 146, 0.88) 22%, transparent 23%),
-        radial-gradient(50rem 32rem at 70% 82%, rgba(193, 173, 133, 0.68) 0%, rgba(193, 173, 133, 0.68) 20%, transparent 21%),
-        linear-gradient(180deg, #efcfc1 0%, #f2d8ca 36%, #efcfc0 68%, #f3ddd2 100%);
+        radial-gradient(56rem 34rem at 10% 12%, rgba(220, 158, 142, 0.42) 0%, rgba(220, 158, 142, 0.42) 32%, transparent 68%),
+        radial-gradient(52rem 32rem at 34% 18%, rgba(235, 184, 158, 0.36) 0%, rgba(235, 184, 158, 0.36) 30%, transparent 70%),
+        radial-gradient(54rem 34rem at 68% 14%, rgba(186, 168, 132, 0.22) 0%, rgba(186, 168, 132, 0.22) 28%, transparent 72%),
+        radial-gradient(60rem 38rem at 88% 28%, rgba(223, 155, 126, 0.34) 0%, rgba(223, 155, 126, 0.34) 30%, transparent 70%),
+        radial-gradient(58rem 36rem at 18% 52%, rgba(242, 198, 176, 0.30) 0%, rgba(242, 198, 176, 0.30) 30%, transparent 70%),
+        radial-gradient(56rem 34rem at 54% 50%, rgba(179, 161, 126, 0.18) 0%, rgba(179, 161, 126, 0.18) 26%, transparent 74%),
+        radial-gradient(60rem 36rem at 82% 60%, rgba(212, 137, 122, 0.30) 0%, rgba(212, 137, 122, 0.30) 28%, transparent 72%),
+        radial-gradient(58rem 36rem at 30% 82%, rgba(236, 176, 150, 0.30) 0%, rgba(236, 176, 150, 0.30) 28%, transparent 72%),
+        radial-gradient(54rem 32rem at 72% 84%, rgba(193, 173, 133, 0.16) 0%, rgba(193, 173, 133, 0.16) 26%, transparent 74%),
+        linear-gradient(180deg, #efd2c6 0%, #f3ddd3 42%, #efd6ca 100%);
     background-attachment: fixed;
 }
 
