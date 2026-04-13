@@ -1,11 +1,10 @@
 :root {
-    --text: #161210;
-    --muted: rgba(22, 18, 16, 0.72);
-    --speaker: rgba(22, 18, 16, 0.82);
-    --rule: rgba(22, 18, 16, 0.18);
+    --text: #171310;
+    --muted: rgba(23, 19, 16, 0.72);
+    --speaker: rgba(23, 19, 16, 0.82);
 
-    --paper: rgba(255, 247, 241, 0.58);
-    --paper-mobile: rgba(255, 247, 241, 0.66);
+    --paper: rgba(255, 248, 243, 0.42);
+    --paper-mobile: rgba(255, 248, 243, 0.56);
 
     --max-width: 780px;
 }
@@ -18,18 +17,19 @@ html {
     margin: 0;
     padding: 0;
     min-height: 100%;
+
     background-color: #efd7cc;
     background-image:
-        radial-gradient(56rem 34rem at 10% 12%, rgba(220, 158, 142, 0.42) 0%, rgba(220, 158, 142, 0.42) 32%, transparent 68%),
-        radial-gradient(52rem 32rem at 34% 18%, rgba(235, 184, 158, 0.36) 0%, rgba(235, 184, 158, 0.36) 30%, transparent 70%),
-        radial-gradient(54rem 34rem at 68% 14%, rgba(186, 168, 132, 0.22) 0%, rgba(186, 168, 132, 0.22) 28%, transparent 72%),
-        radial-gradient(60rem 38rem at 88% 28%, rgba(223, 155, 126, 0.34) 0%, rgba(223, 155, 126, 0.34) 30%, transparent 70%),
-        radial-gradient(58rem 36rem at 18% 52%, rgba(242, 198, 176, 0.30) 0%, rgba(242, 198, 176, 0.30) 30%, transparent 70%),
-        radial-gradient(56rem 34rem at 54% 50%, rgba(179, 161, 126, 0.18) 0%, rgba(179, 161, 126, 0.18) 26%, transparent 74%),
-        radial-gradient(60rem 36rem at 82% 60%, rgba(212, 137, 122, 0.30) 0%, rgba(212, 137, 122, 0.30) 28%, transparent 72%),
-        radial-gradient(58rem 36rem at 30% 82%, rgba(236, 176, 150, 0.30) 0%, rgba(236, 176, 150, 0.30) 28%, transparent 72%),
-        radial-gradient(54rem 32rem at 72% 84%, rgba(193, 173, 133, 0.16) 0%, rgba(193, 173, 133, 0.16) 26%, transparent 74%),
-        linear-gradient(180deg, #efd2c6 0%, #f3ddd3 42%, #efd6ca 100%);
+        radial-gradient(90rem 54rem at 6% 8%, rgba(228, 150, 128, 0.30) 0%, rgba(228, 150, 128, 0.30) 18%, transparent 52%),
+        radial-gradient(84rem 50rem at 28% 14%, rgba(242, 187, 160, 0.26) 0%, rgba(242, 187, 160, 0.26) 17%, transparent 54%),
+        radial-gradient(88rem 52rem at 56% 10%, rgba(163, 153, 108, 0.18) 0%, rgba(163, 153, 108, 0.18) 14%, transparent 56%),
+        radial-gradient(92rem 56rem at 88% 18%, rgba(232, 164, 120, 0.24) 0%, rgba(232, 164, 120, 0.24) 16%, transparent 56%),
+        radial-gradient(86rem 52rem at 14% 46%, rgba(246, 206, 180, 0.20) 0%, rgba(246, 206, 180, 0.20) 16%, transparent 58%),
+        radial-gradient(84rem 50rem at 42% 44%, rgba(147, 141, 100, 0.15) 0%, rgba(147, 141, 100, 0.15) 12%, transparent 58%),
+        radial-gradient(90rem 54rem at 76% 52%, rgba(214, 136, 120, 0.22) 0%, rgba(214, 136, 120, 0.22) 15%, transparent 56%),
+        radial-gradient(88rem 52rem at 26% 82%, rgba(242, 174, 142, 0.20) 0%, rgba(242, 174, 142, 0.20) 16%, transparent 58%),
+        radial-gradient(82rem 48rem at 72% 84%, rgba(172, 161, 114, 0.14) 0%, rgba(172, 161, 114, 0.14) 12%, transparent 60%),
+        linear-gradient(180deg, #efd0c3 0%, #f4dfd5 46%, #eed5c8 100%);
     background-attachment: fixed;
 }
 
@@ -39,7 +39,7 @@ body {
     min-height: 100%;
     color: var(--text);
     font-family: "Source Serif 4", Georgia, serif;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.68;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -48,12 +48,11 @@ body {
 .page {
     width: 100%;
     min-height: 100vh;
-    padding: 56px 28px 74px;
+    padding: 54px 28px 64px;
 }
 
 .masthead,
-.dialogue,
-.signature {
+.dialogue {
     width: 100%;
     max-width: var(--max-width);
     margin-left: auto;
@@ -61,25 +60,22 @@ body {
 }
 
 .masthead {
-    margin-top: 10px;
-    margin-bottom: 54px;
+    margin-top: 6px;
+    margin-bottom: 40px;
 }
 
-h1 {
-    margin: 0;
-    font-size: clamp(2.8rem, 6vw, 5rem);
-    line-height: 0.96;
-    font-weight: 500;
-    letter-spacing: -0.035em;
-}
-
-.subtitle {
-    margin-top: 16px;
-    max-width: 34em;
+.byline {
     font-family: "Inter", Arial, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    letter-spacing: 0.02em;
     color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.byline-separator {
+    opacity: 0.65;
+    padding: 0 0.35em;
 }
 
 .invisible-link {
@@ -92,27 +88,42 @@ h1 {
     text-decoration: none;
 }
 
+h1 {
+    margin: 0;
+    font-size: clamp(3.2rem, 6.8vw, 5.8rem);
+    line-height: 0.94;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+}
+
+.subtitle {
+    margin-top: 14px;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.98rem;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
 .dialogue {
-    padding: 34px 38px 28px;
+    padding: 30px 34px 24px;
     background: var(--paper);
-    border: 1px solid rgba(22, 18, 16, 0.08);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34);
-    backdrop-filter: blur(0.5px);
-    -webkit-backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(23, 19, 16, 0.05);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 
 .exchange {
     display: grid;
-    grid-template-columns: 74px 1fr;
+    grid-template-columns: 72px 1fr;
     column-gap: 12px;
     align-items: start;
     margin: 0 0 18px 0;
 }
 
 .speaker {
-    padding-top: 0.2em;
+    padding-top: 0.18em;
     font-family: "Inter", Arial, sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     line-height: 1.2;
     font-weight: 600;
     letter-spacing: 0.14em;
@@ -129,48 +140,28 @@ h1 {
 }
 
 .section-gap {
-    height: 44px;
-}
-
-.signature {
-    margin-top: 76px;
-    text-align: center;
-}
-
-.signature a {
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 0.92rem;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    text-transform: lowercase;
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.16s ease;
-}
-
-.signature a:hover {
-    color: var(--text);
+    height: 38px;
 }
 
 @media (max-width: 900px) {
     body {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .page {
-        padding: 46px 22px 62px;
+        padding: 44px 22px 56px;
     }
 
     .masthead {
-        margin-bottom: 42px;
+        margin-bottom: 34px;
     }
 
     .dialogue {
-        padding: 28px 28px 22px;
+        padding: 26px 26px 20px;
     }
 
     .exchange {
-        grid-template-columns: 66px 1fr;
+        grid-template-columns: 64px 1fr;
         column-gap: 10px;
     }
 }
@@ -186,23 +177,23 @@ h1 {
     }
 
     .page {
-        padding: 34px 16px 50px;
+        padding: 30px 16px 44px;
     }
 
-    .masthead {
-        margin-bottom: 30px;
+    .byline {
+        font-size: 0.8rem;
+        margin-bottom: 14px;
     }
 
     h1 {
-        font-size: 2.45rem;
+        font-size: 2.55rem;
         line-height: 0.98;
-        letter-spacing: -0.028em;
+        letter-spacing: -0.03em;
     }
 
     .subtitle {
-        margin-top: 12px;
-        font-size: 0.94rem;
-        line-height: 1.45;
+        margin-top: 10px;
+        font-size: 0.9rem;
     }
 
     .dialogue {
@@ -218,16 +209,12 @@ h1 {
 
     .speaker {
         padding-top: 0;
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         letter-spacing: 0.12em;
     }
 
     .section-gap {
-        height: 32px;
-    }
-
-    .signature {
-        margin-top: 54px;
+        height: 28px;
     }
 }
 
@@ -237,10 +224,10 @@ h1 {
     }
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 2.28rem;
     }
 
     .subtitle {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
     }
 }
