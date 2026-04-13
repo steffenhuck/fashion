@@ -203,23 +203,29 @@ h1 {
 }
 
 @media (max-width: 700px) {
+
     html {
-        background-color: #f0cbb8;
+        background-color: #b79a86;
         background-image:
-            radial-gradient(28rem 20rem at 10% 12%, rgba(226, 132, 102, 0.55) 0%, transparent 60%),
-            radial-gradient(26rem 18rem at 40% 18%, rgba(246, 172, 140, 0.55) 0%, transparent 60%),
-            radial-gradient(24rem 18rem at 70% 14%, rgba(170, 165, 90, 0.50) 0%, transparent 60%),
-            radial-gradient(30rem 22rem at 88% 26%, rgba(224, 150, 112, 0.55) 0%, transparent 60%),
 
-            radial-gradient(28rem 20rem at 18% 55%, rgba(252, 200, 172, 0.55) 0%, transparent 60%),
-            radial-gradient(26rem 18rem at 50% 50%, rgba(150, 146, 84, 0.50) 0%, transparent 60%),
-            radial-gradient(28rem 20rem at 82% 58%, rgba(232, 160, 120, 0.55) 0%, transparent 60%),
+            /* upper field */
+            radial-gradient(22rem 16rem at 10% 10%, rgba(150, 110, 85, 0.70) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 38% 12%, rgba(230, 155, 120, 0.60) 0%, transparent 65%),
+            radial-gradient(18rem 14rem at 70% 10%, rgba(120, 115, 70, 0.65) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 90% 20%, rgba(200, 135, 95, 0.60) 0%, transparent 65%),
 
-            radial-gradient(28rem 20rem at 20% 85%, rgba(210, 120, 90, 0.55) 0%, transparent 60%),
-            radial-gradient(26rem 18rem at 60% 82%, rgba(168, 164, 90, 0.50) 0%, transparent 60%),
-            radial-gradient(28rem 20rem at 90% 88%, rgba(240, 170, 130, 0.55) 0%, transparent 60%),
+            /* middle field */
+            radial-gradient(22rem 16rem at 15% 48%, rgba(245, 190, 160, 0.55) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 48% 50%, rgba(105, 102, 65, 0.65) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 80% 52%, rgba(225, 150, 110, 0.55) 0%, transparent 65%),
 
-            linear-gradient(180deg, #efc6b2 0%, #f3d6c6 100%);
+            /* lower field */
+            radial-gradient(22rem 16rem at 20% 85%, rgba(170, 115, 90, 0.65) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 60% 82%, rgba(135, 130, 80, 0.65) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 90% 88%, rgba(235, 165, 125, 0.55) 0%, transparent 65%),
+
+            linear-gradient(180deg, #a68872 0%, #bfa08a 50%, #a98b76 100%);
+
         background-attachment: scroll;
     }
 
@@ -232,25 +238,55 @@ h1 {
         padding: 30px 16px 44px;
     }
 
+    /* top text visibility fix */
+
     .byline {
         font-size: 0.78rem;
         margin-bottom: 12px;
+        color: rgba(70, 52, 42, 0.82);
     }
 
     h1 {
-        font-size: 2.95rem;
+        font-size: 2.9rem;
         line-height: 0.94;
         letter-spacing: 0.06em;
+        color: rgba(255, 244, 236, 0.85);
     }
 
     .subtitle {
         margin-top: 10px;
         font-size: 0.88rem;
+        color: rgba(255, 244, 236, 0.70);
     }
+
+    /* integrated dialogue zone (not a card) */
 
     .dialogue {
         padding: 22px 18px 16px;
         border-radius: 22px;
+
+        background:
+            radial-gradient(22rem 16rem at 10% 10%, rgba(190, 150, 125, 0.22) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 40% 12%, rgba(255, 215, 190, 0.18) 0%, transparent 65%),
+            radial-gradient(18rem 14rem at 70% 10%, rgba(190, 185, 140, 0.16) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 90% 20%, rgba(235, 185, 160, 0.18) 0%, transparent 65%),
+
+            radial-gradient(22rem 16rem at 15% 48%, rgba(255, 225, 205, 0.16) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 48% 50%, rgba(200, 195, 150, 0.14) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 80% 52%, rgba(245, 205, 185, 0.16) 0%, transparent 65%),
+
+            radial-gradient(22rem 16rem at 20% 85%, rgba(210, 170, 145, 0.16) 0%, transparent 65%),
+            radial-gradient(20rem 14rem at 60% 82%, rgba(200, 195, 150, 0.14) 0%, transparent 65%),
+            radial-gradient(22rem 16rem at 90% 88%, rgba(250, 210, 190, 0.14) 0%, transparent 65%),
+
+            rgba(255, 245, 235, 0.10);
+
+        border: 1px solid rgba(255, 240, 230, 0.06);
+
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+
+        box-shadow: 0 3px 8px rgba(20, 12, 8, 0.05);
     }
 
     .exchange {
@@ -267,19 +303,5 @@ h1 {
 
     .section-gap {
         height: 28px;
-    }
-}
-
-@media (max-width: 430px) {
-    body {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 2.6rem;
-    }
-
-    .subtitle {
-        font-size: 0.84rem;
     }
 }
