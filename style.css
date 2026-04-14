@@ -203,28 +203,25 @@ h1 {
 }
 
 html {
-    background-color: #b79a86;
+    background-color: #a88974;
     background-image:
 
-        /* aggressive top contrast (intentional overshoot) */
-        radial-gradient(14rem 10rem at 4% 4%, rgba(110, 120, 60, 0.85) 0%, transparent 60%),
-        radial-gradient(16rem 11rem at 18% 6%, rgba(190, 120, 85, 0.80) 0%, transparent 60%),
-        radial-gradient(14rem 10rem at 36% 4%, rgba(235, 155, 115, 0.75) 0%, transparent 60%),
-        radial-gradient(14rem 10rem at 52% 6%, rgba(100, 110, 55, 0.85) 0%, transparent 60%),
-        radial-gradient(16rem 11rem at 70% 4%, rgba(210, 140, 100, 0.75) 0%, transparent 60%),
-        radial-gradient(14rem 10rem at 88% 6%, rgba(95, 105, 50, 0.85) 0%, transparent 60%),
+        /* TOP — clear variation (one olive + one warm, overlapping) */
+        radial-gradient(28rem 20rem at 12% 6%, rgba(118, 122, 66, 0.70) 0%, transparent 65%),
+        radial-gradient(30rem 22rem at 48% 8%, rgba(230, 160, 125, 0.62) 0%, transparent 65%),
+        radial-gradient(26rem 18rem at 86% 10%, rgba(102, 86, 68, 0.66) 0%, transparent 65%),
 
-        /* middle */
-        radial-gradient(18rem 13rem at 16% 40%, rgba(240, 190, 160, 0.60) 0%, transparent 65%),
-        radial-gradient(16rem 12rem at 46% 42%, rgba(110, 106, 60, 0.70) 0%, transparent 65%),
-        radial-gradient(18rem 13rem at 78% 44%, rgba(225, 150, 110, 0.60) 0%, transparent 65%),
+        /* MIDDLE — evenly spaced, softer */
+        radial-gradient(26rem 18rem at 18% 40%, rgba(240, 190, 160, 0.48) 0%, transparent 65%),
+        radial-gradient(24rem 17rem at 50% 44%, rgba(110, 108, 64, 0.52) 0%, transparent 65%),
+        radial-gradient(26rem 18rem at 82% 42%, rgba(222, 150, 112, 0.48) 0%, transparent 65%),
 
-        /* lower */
-        radial-gradient(18rem 13rem at 14% 76%, rgba(170, 115, 90, 0.65) 0%, transparent 65%),
-        radial-gradient(16rem 12rem at 50% 80%, rgba(120, 116, 65, 0.70) 0%, transparent 65%),
-        radial-gradient(18rem 13rem at 86% 82%, rgba(235, 165, 125, 0.60) 0%, transparent 65%),
+        /* LOWER — same rhythm */
+        radial-gradient(26rem 18rem at 18% 78%, rgba(160, 114, 88, 0.50) 0%, transparent 65%),
+        radial-gradient(24rem 17rem at 52% 80%, rgba(122, 120, 70, 0.52) 0%, transparent 65%),
+        radial-gradient(26rem 18rem at 86% 82%, rgba(232, 165, 125, 0.48) 0%, transparent 65%),
 
-        linear-gradient(180deg, #a88973 0%, #c1a28d 50%, #aa8c78 100%);
+        linear-gradient(180deg, #a88974 0%, #c0a28e 50%, #a88b77 100%);
 
     background-attachment: scroll;
 }
