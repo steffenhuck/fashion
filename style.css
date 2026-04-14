@@ -202,32 +202,32 @@ h1 {
     }
 }
 
-@media (max-width: 700px) {
-    html {
-        background-color: #b39784;
-        background-image:
-            /* top needs visible incident */
-            radial-gradient(16rem 12rem at 6% 6%, rgba(120, 116, 68, 0.72) 0%, transparent 62%),
-            radial-gradient(18rem 13rem at 24% 8%, rgba(146, 104, 80, 0.70) 0%, transparent 64%),
-            radial-gradient(16rem 12rem at 48% 7%, rgba(232, 162, 128, 0.58) 0%, transparent 62%),
-            radial-gradient(15rem 11rem at 68% 7%, rgba(122, 118, 70, 0.74) 0%, transparent 60%),
-            radial-gradient(18rem 13rem at 90% 12%, rgba(182, 126, 92, 0.62) 0%, transparent 64%),
+html {
+    background-color: #b79a86;
+    background-image:
 
-            /* mid field */
-            radial-gradient(18rem 13rem at 12% 36%, rgba(240, 188, 160, 0.52) 0%, transparent 64%),
-            radial-gradient(15rem 11rem at 38% 38%, rgba(106, 102, 62, 0.62) 0%, transparent 60%),
-            radial-gradient(18rem 13rem at 62% 40%, rgba(222, 150, 112, 0.50) 0%, transparent 64%),
-            radial-gradient(15rem 11rem at 84% 38%, rgba(118, 114, 68, 0.60) 0%, transparent 60%),
+        /* aggressive top contrast (intentional overshoot) */
+        radial-gradient(14rem 10rem at 4% 4%, rgba(110, 120, 60, 0.85) 0%, transparent 60%),
+        radial-gradient(16rem 11rem at 18% 6%, rgba(190, 120, 85, 0.80) 0%, transparent 60%),
+        radial-gradient(14rem 10rem at 36% 4%, rgba(235, 155, 115, 0.75) 0%, transparent 60%),
+        radial-gradient(14rem 10rem at 52% 6%, rgba(100, 110, 55, 0.85) 0%, transparent 60%),
+        radial-gradient(16rem 11rem at 70% 4%, rgba(210, 140, 100, 0.75) 0%, transparent 60%),
+        radial-gradient(14rem 10rem at 88% 6%, rgba(95, 105, 50, 0.85) 0%, transparent 60%),
 
-            /* lower field */
-            radial-gradient(18rem 13rem at 14% 72%, rgba(156, 110, 84, 0.62) 0%, transparent 64%),
-            radial-gradient(15rem 11rem at 46% 78%, rgba(128, 124, 74, 0.62) 0%, transparent 60%),
-            radial-gradient(18rem 13rem at 84% 80%, rgba(234, 166, 126, 0.52) 0%, transparent 64%),
+        /* middle */
+        radial-gradient(18rem 13rem at 16% 40%, rgba(240, 190, 160, 0.60) 0%, transparent 65%),
+        radial-gradient(16rem 12rem at 46% 42%, rgba(110, 106, 60, 0.70) 0%, transparent 65%),
+        radial-gradient(18rem 13rem at 78% 44%, rgba(225, 150, 110, 0.60) 0%, transparent 65%),
 
-            linear-gradient(180deg, #a88a76 0%, #bea08c 48%, #aa8d79 100%);
-        background-attachment: scroll;
-    }
+        /* lower */
+        radial-gradient(18rem 13rem at 14% 76%, rgba(170, 115, 90, 0.65) 0%, transparent 65%),
+        radial-gradient(16rem 12rem at 50% 80%, rgba(120, 116, 65, 0.70) 0%, transparent 65%),
+        radial-gradient(18rem 13rem at 86% 82%, rgba(235, 165, 125, 0.60) 0%, transparent 65%),
 
+        linear-gradient(180deg, #a88973 0%, #c1a28d 50%, #aa8c78 100%);
+
+    background-attachment: scroll;
+}
     body {
         font-size: 18.5px;
         line-height: 1.64;
